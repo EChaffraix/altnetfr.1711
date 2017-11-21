@@ -5,7 +5,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using common;
 using Microsoft.AspNetCore.Mvc;
-using service.Models;
 
 namespace service.Controllers
 {
