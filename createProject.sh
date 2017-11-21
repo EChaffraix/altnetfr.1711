@@ -35,6 +35,8 @@ cd website.tests
 dotnet new classlib -f netcoreapp2.0
 dotnet add website.tests.csproj package NUnit
 dotnet add website.tests.csproj package NSubstitute
+dotnet add website.tests.csproj package Microsoft.NET.Test.Sdk
+dotnet add website.tests.csproj package NUnit3TestAdapter
 dotnet add website.tests.csproj reference ../../src/website/website.csproj
 cd ..
 
@@ -43,6 +45,8 @@ cd service.tests
 dotnet new classlib -f netcoreapp2.0
 dotnet add service.tests.csproj package NUnit
 dotnet add service.tests.csproj package NSubstitute
+dotnet add service.tests.csproj package Microsoft.NET.Test.Sdk
+dotnet add service.tests.csproj package NUnit3TestAdapter
 dotnet add service.tests.csproj reference ../../src/service/service.csproj
 cd ../..
 
