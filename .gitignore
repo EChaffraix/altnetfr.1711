@@ -236,6 +236,10 @@ _Pvt_Extensions
 # bower
 **/Content/components
 
+# Packages
+*.tar.gz
+*.zip
+
 #NCrunch
 *.ncrunchproject
 *.ncrunchsolution
