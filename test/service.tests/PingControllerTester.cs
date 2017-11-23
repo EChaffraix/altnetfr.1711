@@ -19,7 +19,7 @@ namespace service.tests
             var content = result as OkObjectResult;
             var item = content.Value as VersionMessage;
             Assert.That(item, Is.Not.Null);
-            Assert.That(item.Version, Is.EqualTo("0.1"));
+            Assert.That(item.Version, Is.EqualTo("1.0"));
         }
     }
 }
