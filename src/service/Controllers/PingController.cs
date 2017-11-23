@@ -15,7 +15,7 @@ namespace service.Controllers
         public IActionResult Version()
         {
             var message = new VersionMessage();
-            message.Version = "0.1";
+            message.Version = "1.0";
             message.Timestamp = DateTime.UtcNow;
             return Ok(message);
         }

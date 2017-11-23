@@ -27,9 +27,9 @@ namespace website.Controllers
             Logger = factory.CreateLogger<HomeController>();
             Logger.LogInformation($"Using service at : {serviceUrl}");
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var result = Get<VersionMessage>("/ping");
+            var result = await Get<VersionMessage>("/ping");
             return View(result);
         }
 
